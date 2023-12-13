@@ -9,8 +9,7 @@ conexao = mysql.connector.connect(
     database='db_tabela'
 )
 
-# Consulta SQL para selecionar todos os dados da tabela
-consulta_sql = "SELECT * FROM "
+consulta_sql = "SELECT * FROM dados"
 
 df = pd.read_sql(consulta_sql, conexao)
 
